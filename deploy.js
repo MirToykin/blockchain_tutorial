@@ -20,7 +20,7 @@ async function main() {
     // const transactionReceipt = await contract.deployTransaction.wait(1);
     // console.log(transactionReceipt);
 
-    сonsole.log('Deploying only with transaction data');
+    console.log('Deploying only with transaction data');
     const tx = {
         nonce: 3,
         gasPrice: 20000000000,
