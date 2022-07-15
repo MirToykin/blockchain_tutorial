@@ -18,13 +18,17 @@ task('accounts', 'Prints the list of accounts', async (taskArgs, hre) => {
 })
 
 module.exports = {
-  defaultNetwork: "hardhat",
+  defaultNetwork: "localhost",
   solidity: "0.8.7",
   networks: {
     rinkeby: {
       url: RINKEBY_RPC_URL,
       accounts: [RINKEBY_PRIVATE_KEY],
       chainId: 4 // можно посмотреть на chainlist.org
+    },
+    localhost: {
+      url: 'http://127.0.0.1:8545',
+      chainId: 31337
     }
   },
   etherscan: {
